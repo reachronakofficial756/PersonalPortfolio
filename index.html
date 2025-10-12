@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PersonalPortfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Web Page — Unlox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+  <header class="site-header">
+    <div class="container">
+      <h1>👋 Hello, I'm <span class="accent" id="student-name">Ronak Jain</span></h1>
+      <p class="tagline">This is my first HTML page — built in the Unlox Web Dev track.</p>
+    </div>
+  </header>
+  <main class="container">
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I'm learning how the web works! I like <strong>[your interests]</strong> and I'm excited to build
+        cool things with HTML, CSS, and JavaScript.
+      </p>
+    </section>
+
+    <section aria-labelledby="links-heading">
+      <h2 id="links-heading">My Links</h2>
+      <ul class="links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener">My GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">My LinkedIn</a></li>
+        <li><a href="https://unlox.club/" target="_blank" rel="noopener">Unlox</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="image-heading">
+      <h2 id="image-heading">My Picture</h2>
+      <figure>
+        <img src="assets/unlox-placeholder.svg" alt="A placeholder avatar for your profile image" width="200">
+        <figcaption>Replace this image with your own: use an online image URL or add a file into the assets folder.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="extra-heading">
+      <h2 id="extra-heading">Extra: Fun Facts</h2>
+      <ol>
+        <li>I can deploy this site with GitHub Pages.</li>
+        <li>I know the difference between the Internet and the Web.</li>
+        <li>I wrote these elements using proper HTML tags.</li>
+      </ol>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with ❤️ in the Unlox Web Dev Track • <span id="year">2025</span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
 
